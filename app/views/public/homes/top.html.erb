@@ -1,69 +1,59 @@
+<div class="container">
+  <div class="row ml-3">
+    <% if flash %>
+      <%= flash[:notice] %>
+    <% end %>
+  </div>
+</div>
 <div class="container position-relative">
- <div class="row">
-  <div class="col-md-3  mt-5">
-   <div class="card " style="width: 15rem;">
-    <div class="card-header text-center">
-     ジャンル検索
+  <div class="row">
+    <div class="col-lg-3 ml-2 mt-5">
+      <div class="card mr-2">
+        <div class="card-header text-center">
+         ジャンル検索
+        </div>
+        <ul class="list-group list-group-flush">
+         <% @genres.each do |genre| %>
+         <li class="list-group-item text-center"><%= link_to genre.name, admin_genres_path(genre_id: genre.id) %></li>
+         <% end %>
+        </ul>
+      </div>
     </div>
-    <ul class="list-group list-group-flush">
-     <% @genres.each do |genre| %>
-     <li class="list-group-item text-center"><%= link_to genre.name, admin_genres_path(genre_id: genre.id) %></li>
-     <% end %>
-    </ul>
-   </div>
+
+    <div class="col-lg-8 col-md-5 ml-4">
+      <div class="row mt-5 pb-2">
+        <%= image_tag 'top-cake.jpg', size:"700x400", style: "position:relative; opacity: 0.8;" %>
+        <p class="text-left", style="position:absolute; top:70px; left:25px; width:400px; color:#000;"><b>
+         ようこそ、ながのCAKEへ！<br>
+         このサイトは、ケーキ販売のECサイトになります<br>
+         会員でない方も商品の閲覧はできますが<br>
+         購入には会員登録が必要になります
+        </b></p>
+
+        <div class="new-arrival">
+          <h3 class="mt-4"><strong>新着商品</strong></h3>
+          <div class="new-arrival-contents" style="display:flex;">
+            <% @items.first(4).each do |item| %>
+              <div class="mr-3 mt-3">
+                <%= link_to item_path(item.id) do %>
+                  <%= image_tag item.image, size:"160x120" %><br>
+                  <p clas="mt-3 mb-1"><%= item.name %></p>
+                  <p class="mb-5">&yen;<%= item.price %></p>
+                <% end %>
+              </div>
+            <% end %>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-8 offset-lg-4 mt-3 text-nowrap text-right ">
+              <%= link_to "全ての商品を見る", items_path %>
+          </div>
+         </div>
+        </div>
+      </div>
+    </div>
   </div>
- </div>
 </div>
-
-
-<div class="col-md-9  offset-md-5 my-5 mr-8">
-<%= image_tag 'hanabi.jpeg', size:"700x400", style: "position:relative;" %>
-<p style="position:absolute; top:150px; left:200px; color:#000; background-color:#FFF;">
- ようこそ、ながのCAKEへ！<br>
- このサイトは、ケーキ販売のECサイトになります。<br>
- 会員でない方も商品の閲覧はできますが、<br>
- 購入には会員登録が必要になります。
-</p>
-
-<div class="row">
- <div class="col-md-9 mt-5 mb-2 text-left">
-  <h4 class="mb-3 pl-2">
-   <strong>新着商品</strong>
-  </h4>
- </div>
-</div>
-
-
-<div class="col-md-3">
-
- <% @items.first(4).each do |item| %>
-
-<div class="d-flex align-items-end">
-  <%= link_to item_path(item.id) do %>
-   <%= image_tag item.image, size:"200x150" %>
-   <% end %>
-   <%= item.name %>
-   &yen;<%= item.price %>
- 
- <% end %>
- </div>   
-</div>
-
-
-<div class="row">
- <div class="col-md-2 offset-md-5 mt-3 text-nowrap">
-  <%= link_to "全ての商品を見る", items_path %>
- </div>
-
-  </div>
- </div>
-</div>
-
-</div>
-</div>
-</div>
-</div>
-
 
 
 
