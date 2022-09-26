@@ -16,11 +16,11 @@
     <table class='table table-bordered'>
       <thead>
         <tr>
-          <th class="table-active">商品名</th>
-          <th class="table-active">単価（税込み）</th>
-          <th class="table-active">数量</th>
-          <th class="table-active">小計</th>
-          <th class="table-active"></th>
+          <th class="table-success">商品名</th>
+          <th class="table-success">単価（税込み）</th>
+          <th class="table-success">数量</th>
+          <th class="table-success">小計</th>
+          <th class="table-success"></th>
         </tr>
       </thead>
       <% @cart_items.each do |cart_item| %>
@@ -65,7 +65,7 @@
           <tbody>
             <tr>
               <% @total = @cart_items.inject(0) { |sum, item| sum + item.sum_of_price } %>
-              <th class="table table-active align-middle">合計金額</th>
+              <th class="table table-success align-middle">合計金額</th>f
               <td nowrap><%= @total.to_s(:delimited) %> 円</td>
             </tr>
           </tbody>

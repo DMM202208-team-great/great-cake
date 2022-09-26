@@ -1,14 +1,16 @@
 <div class="container">
  <div class="row">
   <div class="col-md-8 offset-2">
-    <h4 class="text-center my-4 mt-5", style="background-color: #eee; width:200px; padding-left: 12px;"><b>配送先登録/一覧</b></h4>
+    <h4 class="text-center my-4", style="background-color: #eee; width:200px; padding-left: 12px;"><b>配送先登録/一覧</b></h4>
   </div>
  </div>
 </div>
 
-<p id="notice">
- <%=  notice %>
-</p>
+<div class="ml-5">
+ <p id="notice">
+  <%=  notice %>
+ </p>
+</div>
 
 <div class="container">
  <div class="row">
@@ -29,7 +31,7 @@
     <strong>宛名</strong>
      <%= f.text_field :name, class: 'form-control' %>
    </div>
-   <div class="d-md-flex justify-content-md-end mb-3 ">
+   <div class="d-md-flex justify-content-md-end mb-2 ">
     <%= f.submit '新規登録', class: 'btn btn-primary' %>
    </div>
    <% end %>

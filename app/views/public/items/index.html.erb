@@ -1,6 +1,6 @@
 <div class="container-fluid position-relative">
   <div class="row mx-auto">
-    <div class="col-md-2 ml-2 mt-5">
+    <div class="col-md-2 ml-2 mt-2">
       <div class="card mr-2">
         <div class="card-header text-center">
         ジャンル検索
@@ -14,18 +14,18 @@
      </div>
 
 
-          <div class='col-md-8 text-left'>
-            <div class="row mt-5 pb-2 justify-content-center">
+          <div class='col-md-9 text-left'>
+            <div class="row mt-2 pb-2 justify-content-center">
             <h2 class="text-center", style="background-color: #eee; width:200px; padding-left: 12px;"><b>商品一覧 </b></h2>
-            <div class=" justify-content-center d-flex align-items-end mb-2">
-            (全<%= @items.count %>件)
+            <div class="justify-content-center d-flex align-items-end mb-2">
+            (全<%= @items.count %>件)</div>
             </div>
             <div class="new-arrival">
-              <div class="new-arrival-contents justify-content-center mt-5" style="display:flex; flex-wrap:wrap;">
+              <div class="new-arrival-contents justify-content-center mt-3" style="display:flex; flex-wrap:wrap;">
             <% @items.each do |item| %>
               <%= link_to item_path(item) do %>
               <div class="mr-3 mt-3">
-                <%= image_tag item.get_item_image.variant( resize: "300" ) %><br>
+                <%= image_tag item.get_item_image, size: "245x200"  %><br>
               <% end %>
               <p class="mt-3 mb-1"><%= item.name %></p>
               <p class="mb-5"><%= item.add_tax_price %>円（税込)</p>
@@ -40,7 +40,3 @@
         </div>
       </div>
      </div>
-
-    </div>
-  </div>
-</div>
