@@ -110,5 +110,5 @@
 </p>
 
 # 管理者アカウント
-メールアドレス :great@g  
-パスワード    :greatgreat
+- メールアドレス :great@g  
+- パスワード    :greatgreat
