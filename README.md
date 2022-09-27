@@ -95,7 +95,7 @@
     
 **※　　注文・製作ステータスについて**
 <p align="center">
-<img src="https://user-images.githubusercontent.com/109211405/192436612-70011b1d-4ac1-4ae1-aaa0-3c2a871f658f.png/>
+<img src="https://user-images.githubusercontent.com/109211405/192436612-70011b1d-4ac1-4ae1-aaa0-3c2a871f658f.png"/>
 </p>
 
 # 備考
