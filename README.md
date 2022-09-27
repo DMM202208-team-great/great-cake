@@ -1,28 +1,16 @@
-素晴らしいケーキ!
+# 素晴らしいケーキ!
 
 
-![image](https://user-images.githubusercontent.com/110389642/192254334-a16f63ce-8ec3-462d-b25d-dbc5c4da1d73.png)![image](https://user-images.githubusercontent.com/110389642/192254038-b4ef1898-357a-40d6-90ee-5138fab173f8.png)
+![image](https://user-images.githubusercontent.com/110389642/192254334-a16f63ce-8ec3-462d-b25d-dbc5c4da1d73.png)
 
+# 概要
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# 開発環境
+- ruby 3.1.2
+- Rails 6.1.7
 
-Things you may want to cover:
+# 機能
 
-* Ruby version
+# 備考
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+![image](https://user-images.githubusercontent.com/110389642/192254038-b4ef1898-357a-40d6-90ee-5138fab173f8.png)
