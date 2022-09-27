@@ -108,3 +108,7 @@
 <p align="center">
 <img src="https://user-images.githubusercontent.com/110389642/192254038-b4ef1898-357a-40d6-90ee-5138fab173f8.png"/>
 </p>
+
+# 管理者アカウント
+メールアドレス :great@g  
+パスワード    :greatgreat
